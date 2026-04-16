@@ -162,13 +162,20 @@ a{color:inherit;text-decoration:none}
 .stat-num{font-family:var(--font-mono);font-size:clamp(1.8rem,3.5vw,3.2rem);color:var(--acc);font-weight:500;letter-spacing:-.02em;line-height:1}
 .stat-lbl{font-family:var(--font-mono);font-size:11px;color:#a8a49c;letter-spacing:.06em;text-transform:uppercase;margin-top:6px;line-height:1.4;word-break:break-all;overflow-wrap:break-word}
 @media(max-width:640px){
+  /* Stats */
   .stats-inner{grid-template-columns:repeat(2,1fr)}
   .stat{border-bottom:1px solid var(--bdr);padding:1.25rem 1rem}
   .stat:nth-child(even){border-right:none}
   .stat-num{font-size:clamp(1.4rem,7vw,2.2rem)}
   .stat-lbl{font-size:10px;letter-spacing:.04em}
-  .hero-tagline{gap:.4rem 1rem;font-size:11px}
-  .hero-status{font-size:12px}
+  /* Hero — tighten everything */
+  .hero{padding-top:48px;padding-bottom:2rem}
+  .hero-prompt{margin-bottom:1.25rem;font-size:11px}
+  .hero-headline{font-size:clamp(2.2rem,10vw,3rem);margin-bottom:1.25rem}
+  .hero-tagline{display:none}
+  .hero-body{font-size:15px;line-height:1.65;margin-bottom:1.5rem;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .hero-status{font-size:11.5px;gap:.5rem;letter-spacing:.02em}
 }
 
 /* ─── SECTIONS ─────────────────────────────────────── */
