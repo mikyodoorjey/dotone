@@ -66,8 +66,8 @@ a{color:inherit;text-decoration:none}
 .container--narrow{max-width:720px;margin-inline:auto;padding-inline:clamp(1.25rem,5vw,3rem)}
 
 /* ─── NAV ──────────────────────────────────────────── */
-.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:56px;
-  background:rgba(9,8,7,0.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:56px;
+  background:rgb(9,8,7);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
   border-bottom:1px solid var(--bdr-n);
   display:flex;align-items:center;justify-content:space-between;
   padding:0 clamp(1.25rem,5vw,3rem)}
@@ -92,6 +92,8 @@ a{color:inherit;text-decoration:none}
   .nav-links{display:none}
   .nav-mobile-btn{display:flex;align-items:center}
 }
+
+main{position:relative;z-index:1}
 
 /* ─── HERO ─────────────────────────────────────────── */
 .hero{
@@ -178,14 +180,14 @@ a{color:inherit;text-decoration:none}
   border-right:1px solid var(--bdr)}
 .stat:last-child{border-right:none}
 .stat-num{font-family:var(--font-mono);font-size:clamp(1.8rem,3.5vw,3.2rem);color:var(--acc);font-weight:500;letter-spacing:-.02em;line-height:1}
-.stat-lbl{font-family:var(--font-mono);font-size:11px;color:#a8a49c;letter-spacing:.06em;text-transform:uppercase;margin-top:6px;line-height:1.4;word-break:break-all;overflow-wrap:break-word}
+.stat-lbl{font-family:var(--font-mono);font-size:11px;color:#a8a49c;letter-spacing:.06em;text-transform:uppercase;margin-top:6px;line-height:1.4;overflow-wrap:break-word}
 @media(max-width:640px){
   /* Stats */
   .stats-inner{grid-template-columns:repeat(2,1fr)}
   .stat{border-bottom:1px solid var(--bdr);padding:1.25rem 1rem}
   .stat:nth-child(even){border-right:none}
   .stat-num{font-size:clamp(1.4rem,7vw,2.2rem)}
-  .stat-lbl{font-size:10px;letter-spacing:.04em}
+  .stat-lbl{font-size:9px;letter-spacing:.02em}
   /* Hero — tighten everything */
   .hero{padding-top:72px;padding-bottom:2rem}
   .hero-prompt{margin-bottom:1.25rem;font-size:11px}
@@ -606,7 +608,7 @@ footer{
 <!-- ─── PRIOR WORK ─────────────────────────────────────── -->
 <section class="section container" aria-labelledby="prior-title">
   <div class="sec-hd">
-    <span class="sec-label">20202023</span>
+    <span class="sec-label">2020–2023</span>
     <h2 class="sec-title" id="prior-title">Prior work</h2>
   </div>
   <p style="font-size:14px;color:var(--muted);margin-bottom:2rem;font-weight:300">Select projects from five years building brands and communities in web3.</p>
