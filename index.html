@@ -181,13 +181,15 @@ main{position:relative;z-index:1}
 .stat:last-child{border-right:none}
 .stat-num{font-family:var(--font-mono);font-size:clamp(1.8rem,3.5vw,3.2rem);color:var(--acc);font-weight:500;letter-spacing:-.02em;line-height:1}
 .stat-lbl{font-family:var(--font-mono);font-size:11px;color:#a8a49c;letter-spacing:.06em;text-transform:uppercase;margin-top:6px;line-height:1.4;overflow-wrap:break-word}
-@media(max-width:640px){
+@media(max-width:768px){
   /* Stats */
   .stats-inner{grid-template-columns:repeat(2,1fr)}
   .stat{border-bottom:1px solid var(--bdr);padding:1.25rem 1rem}
   .stat:nth-child(even){border-right:none}
   .stat-num{font-size:clamp(1.4rem,7vw,2.2rem)}
   .stat-lbl{font-size:9px;letter-spacing:.02em}
+}
+@media(max-width:640px){
   /* Hero — tighten everything */
   .hero{padding-top:72px;padding-bottom:2rem}
   .hero-prompt{margin-bottom:1.25rem;font-size:11px}
@@ -457,8 +459,8 @@ footer{
 <div class="stats" aria-label="Key metrics">
   <div class="stats-inner">
     <div class="stat reveal">
-      <div class="stat-num" data-target="100">100k+</div>
-      <div class="stat-lbl">combined_audience_built</div>
+      <div class="stat-num" data-target="250">250k+</div>
+      <div class="stat-lbl">audiences_built</div>
     </div>
     <div class="stat reveal">
       <div class="stat-num">4×</div>
